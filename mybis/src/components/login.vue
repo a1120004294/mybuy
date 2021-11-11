@@ -57,6 +57,7 @@
                  this.$message.success('成功');
                  //保存token到sessionStorage
                  window.sessionStorage.setItem('token',res.data.token);
+				 window.sessionStorage.setItem('username',this.loginform.username);
                  //跳转到home组件
                  this.$router.push('/home');
                })
